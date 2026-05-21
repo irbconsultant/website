@@ -18,7 +18,11 @@ const services = [
 export default function Services() {
   return (
     <section className="services section" id="services" aria-label="Services">
-      <div className="services-grid container">
+      <div className="container">
+        <div className="services-header reveal">
+          <span className="eyebrow">What We Offer</span>
+        </div>
+      <div className="services-grid">
         {services.map((s, i) => (
           <article key={s.area} className={`service-area-card reveal reveal-delay-${i}`}>
             <span className="eyebrow service-area-eyebrow">{s.area}</span>
@@ -27,6 +31,7 @@ export default function Services() {
             <span className="service-tag">{s.tag}</span>
           </article>
         ))}
+      </div>
       </div>
     </section>
   )
