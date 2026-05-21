@@ -1,0 +1,31 @@
+# I.R.B Consultant Limited
+
+> I.R.B Consultant Limited is a Hong Kong-registered consulting firm founded in 2025 by Itay and Reut Ben Ner. The firm bridges software technology consulting and financial advisory under one roof, with a focus on HK–Israel cross-border business.
+
+## About
+
+IRB Consultant provides independent consulting services across two disciplines: software & technology (led by Itay Ben Ner) and finance & accounting (led by Reut Ben Ner). The firm is lean, focused, and deeply invested in the success of every client. We believe innovation only matters when it's driven by real human thinking.
+
+## Services
+
+- **Software & Technology Consulting** — End-to-end technology consulting for startups and enterprises. Architecture, development strategy, implementation, and delivery. Contact: itay@irbconsultant.com
+- **Finance & Accounting Consulting** — Financial advisory and accounting services for businesses navigating growth, compliance, and international expansion. Contact: reut@irbconsultant.com
+- **Cross-Border Business Support** — HK–Israel business operations, setup, and strategic consulting for companies operating across both markets. Contact: Both partners.
+
+## People
+
+- **Itay Ben Ner** — Software & Technology Consultant. Email: itay@irbconsultant.com
+- **Reut Ben Ner** — Finance & Accounting Consultant. Email: reut@irbconsultant.com
+
+## Contact
+
+- Website: https://irbconsultant.com
+- Technology inquiries: itay@irbconsultant.com
+- Finance inquiries: reut@irbconsultant.com
+
+## Company Details
+
+- Legal name: I.R.B Consultant Limited
+- Incorporated: Hong Kong SAR
+- Founded: 2025
+- Area served: Hong Kong, Israel, international cross-border clients
