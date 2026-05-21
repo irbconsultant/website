@@ -13,13 +13,6 @@ const services = [
       'Financial advisory and accounting services for businesses navigating growth, compliance, and international expansion. Clarity and structure for your numbers, wherever you operate.',
     tag: 'Reut Ben Ner · reut@irbconsultant.com',
   },
-  {
-    num: '03',
-    title: 'Cross-Border Business Support',
-    description:
-      'HK–Israel business operations, setup, and strategic consulting. We bridge both markets — handling the complexity so you can focus on building.',
-    tag: 'Both Partners · irbconsultant.com',
-  },
 ]
 
 export default function Services() {
