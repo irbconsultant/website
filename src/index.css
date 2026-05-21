@@ -181,7 +181,7 @@ ul, ol { list-style: none; }
   gap: 12px;
 }
 .nav-logo {
-  height: 68px;
+  height: 78px;
   width: auto;
 }
 .nav-name {
@@ -255,7 +255,7 @@ ul, ol { list-style: none; }
 }
 
 .hero-headline {
-  font-size: 56px;
+  font-size: 68px;
   font-weight: 800;
   line-height: 1.05;
   letter-spacing: -0.5px;
@@ -406,10 +406,7 @@ ul, ol { list-style: none; }
 }
 
 .about-inner {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 80px;
-  align-items: center;
+  max-width: 720px;
 }
 
 .about-eyebrow {
@@ -601,10 +598,7 @@ ul, ol { list-style: none; }
   .services-grid { gap: 24px; }
 
   /* About */
-  .about-inner { grid-template-columns: 1fr; gap: 48px; }
   .about-quote { font-size: 28px; }
-  .about-right { flex-direction: row; flex-wrap: wrap; gap: 28px; }
-  .stat-block { flex: 1; min-width: 120px; }
 
   /* Contact */
   .contact-heading { font-size: 32px; }

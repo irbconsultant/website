@@ -1,8 +1,3 @@
-const stats = [
-  { value: '2+',  label: 'Service Lines' },
-  { value: '50%', label: 'Tech · Finance Split' },
-]
-
 export default function About() {
   return (
     <section className="about section" id="about" aria-label="About IRB Consultant">
@@ -20,15 +15,6 @@ export default function About() {
             independent consultants — lean, focused, and deeply invested in the success of
             every client.
           </p>
-        </div>
-
-        <div className="about-right" aria-label="Company highlights">
-          {stats.map((s, i) => (
-            <div key={s.label} className={`stat-block reveal reveal-delay-${i + 1}`}>
-              <span className="stat-value">{s.value}</span>
-              <span className="stat-label">{s.label}</span>
-            </div>
-          ))}
         </div>
 
       </div>
