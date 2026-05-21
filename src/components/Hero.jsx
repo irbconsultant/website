@@ -4,7 +4,6 @@ export default function Hero() {
       <div className="hero-inner container">
 
         <div className="hero-left reveal visible">
-          <span className="eyebrow hero-eyebrow">Hong Kong · Est. 2025</span>
           <h1 className="hero-headline">
             Innovation<br />
             Driven by <span className="text-sage">People.</span>

@@ -160,12 +160,10 @@ ul, ol { list-style: none; }
   top: 0;
   z-index: 100;
   background: var(--color-white);
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 .nav.scrolled {
-  background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 1px 12px rgba(37, 47, 63, 0.08);
-  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 12px rgba(37, 47, 63, 0.10);
 }
 
 .nav-inner {
@@ -183,7 +181,7 @@ ul, ol { list-style: none; }
   gap: 12px;
 }
 .nav-logo {
-  height: 52px;
+  height: 68px;
   width: auto;
 }
 .nav-name {
@@ -241,7 +239,7 @@ ul, ol { list-style: none; }
 ════════════════════════════════════════════ */
 .hero {
   background: var(--color-white);
-  min-height: calc(100vh - 88px);
+  min-height: calc(100vh - 104px);
   display: flex;
   align-items: center;
 }
@@ -594,41 +592,15 @@ ul, ol { list-style: none; }
 ════════════════════════════════════════════ */
 .footer {
   background: var(--color-charcoal);
-  padding: 32px 64px;
-}
-
-.footer-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-
-.footer-brand {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2.5px;
-  color: var(--color-sage);
-  text-transform: uppercase;
-  white-space: nowrap;
+  padding: 28px 64px;
+  text-align: center;
 }
 
 .footer-copy {
   font-size: 13px;
   color: var(--color-sand);
-  text-align: center;
-  opacity: 0.8;
+  opacity: 0.85;
 }
-
-.footer-domain {
-  font-size: 13px;
-  color: var(--color-sand);
-  transition: color 0.2s;
-  white-space: nowrap;
-}
-.footer-domain:hover { color: var(--color-sage); }
 
 /* ════════════════════════════════════════════
    RESPONSIVE — TABLET (768–1023px)
@@ -663,7 +635,7 @@ ul, ol { list-style: none; }
   .contact-heading { font-size: 32px; }
 
   /* Footer */
-  .footer { padding: 28px 40px; }
+  .footer { padding: 24px 40px; }
 }
 
 /* ════════════════════════════════════════════
@@ -715,6 +687,5 @@ ul, ol { list-style: none; }
   .contact-cards { grid-template-columns: 1fr; max-width: 420px; }
 
   /* Footer */
-  .footer { padding: 28px 20px; }
-  .footer-inner { flex-direction: column; text-align: center; gap: 10px; }
+  .footer { padding: 24px 20px; }
 }

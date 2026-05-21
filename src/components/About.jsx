@@ -1,7 +1,6 @@
 const stats = [
-  { value: 'HK·IL', label: 'Cross-Border Focus' },
-  { value: '2+',    label: 'Service Lines' },
-  { value: '50%',   label: 'Tech · Finance Split' },
+  { value: '2+',  label: 'Service Lines' },
+  { value: '50%', label: 'Tech · Finance Split' },
 ]
 
 export default function About() {

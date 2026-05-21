@@ -24,11 +24,6 @@ export default function Nav() {
           <li><a href="#services" onClick={close}>Services</a></li>
           <li><a href="#about" onClick={close}>About Us</a></li>
           <li><a href="#contact" onClick={close}>Contact</a></li>
-          <li>
-            <a href="#contact" className="btn btn-primary nav-cta" onClick={close}>
-              Contact Us
-            </a>
-          </li>
         </ul>
 
         <button
