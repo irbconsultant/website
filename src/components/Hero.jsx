@@ -9,7 +9,6 @@ export default function Hero() {
             Driven by <span className="text-sage">People.</span>
           </h1>
           <p className="hero-subtext">
-            IRB Consultant bridges technology and finance — two disciplines, one firm.
             We believe innovation only works when it's grounded in human connection.
           </p>
           <a href="#contact" className="btn btn-primary">
