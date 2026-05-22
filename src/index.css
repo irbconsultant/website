@@ -153,6 +153,19 @@ ul, ol { list-style: none; }
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 
+/* ─── Bot / Crawler / Reduced-motion accessibility ─── */
+/* Bots, LLMs, and headless renderers that skip JS or honour
+   prefers-reduced-motion must see all content immediately.
+   This also satisfies WCAG 2.1 §2.3.3. */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal.visible {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
 /* ─── Color Helpers ─── */
 .text-sage { color: var(--color-sage); }
 
@@ -688,8 +701,7 @@ ul, ol { list-style: none; }
 
   /* Nav */
   .nav-inner { padding: 14px 20px; }
-  .nav-logo  { height: 36px; width: auto; }
-  .nav-name  { display: none; }
+  .nav-logo  { height: 78px; width: auto; }
   .nav-hamburger { display: flex; }
 
   .nav-links {
