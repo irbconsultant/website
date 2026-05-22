@@ -178,6 +178,7 @@ ul, ol { list-style: none; }
   z-index: 100;
   background: var(--color-white);
   transition: box-shadow 0.3s ease;
+  padding: 0 64px; /* matches .section horizontal gutter */
 }
 .nav.scrolled {
   box-shadow: 0 1px 12px rgba(37, 47, 63, 0.10);
@@ -188,7 +189,7 @@ ul, ol { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 64px;
+  padding: 18px 0; /* horizontal handled by .nav padding */
   max-width: var(--max-width);
   margin: 0 auto;
 }
@@ -197,6 +198,7 @@ ul, ol { list-style: none; }
   display: flex;
   align-items: center;
   gap: 12px;
+  margin-left: -14px; /* compensate for internal whitespace in logo PNG */
 }
 .nav-logo {
   height: 78px;
@@ -257,7 +259,7 @@ ul, ol { list-style: none; }
 ════════════════════════════════════════════ */
 .hero {
   background: var(--color-white);
-  min-height: calc(58vh - 60px);
+  min-height: calc(50vh - 60px);
   display: flex;
   align-items: center;
 }
@@ -508,7 +510,6 @@ ul, ol { list-style: none; }
   font-size: 18px;
   line-height: 1.8;
   color: var(--color-sand);
-  max-width: 860px;
 }
 .about-body b {
   font-weight: 500;
@@ -637,9 +638,9 @@ ul, ol { list-style: none; }
   font-size: 15px;
   font-weight: 500;
   color: var(--color-sage);
-  transition: opacity 0.2s;
+  transition: color 0.2s ease;
 }
-.contact-email:hover { opacity: 0.7; }
+.contact-email:hover { color: var(--color-charcoal); }
 
 .contact-copy-btn {
   display: flex;
@@ -699,7 +700,8 @@ ul, ol { list-style: none; }
   .section { padding: 60px 40px; }
 
   /* Nav */
-  .nav-inner { padding: 16px 40px; }
+  .nav { padding: 0 40px; }
+  .nav-inner { padding: 16px 0; }
 
   /* Hero */
   .hero { min-height: auto; padding-top: 64px; padding-bottom: 64px; }
@@ -730,7 +732,8 @@ ul, ol { list-style: none; }
   .section { padding: 48px 20px; }
 
   /* Nav */
-  .nav-inner { padding: 14px 20px; }
+  .nav { padding: 0 20px; }
+  .nav-inner { padding: 14px 0; }
   .nav-logo  { height: 78px; width: auto; }
   .nav-hamburger { display: flex; }
 

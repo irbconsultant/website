@@ -1,3 +1,5 @@
+import ArrowIcon from './ArrowIcon'
+
 export default function Hero() {
   return (
     <section className="hero section" id="hero" aria-label="Hero">
@@ -17,7 +19,7 @@ export default function Hero() {
             we do.
           </p>
           <a href="#contact" className="btn btn-primary">
-            Get in Touch <span aria-hidden="true">→</span>
+            Get in Touch <ArrowIcon />
           </a>
         </div>
       </div>

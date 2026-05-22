@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import ArrowIcon from './ArrowIcon'
 
 const contacts = [
   {
@@ -28,12 +29,36 @@ function CopyIcon() {
   )
 }
 
+function execCommandFallback(text) {
+  const el = document.createElement('textarea')
+  el.value = text
+  el.style.position = 'fixed'
+  el.style.opacity = '0'
+  document.body.appendChild(el)
+  el.focus()
+  el.select()
+  try {
+    document.execCommand('copy')
+  } finally {
+    document.body.removeChild(el)
+  }
+  return Promise.resolve()
+}
+
+function copyToClipboard(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    // Falls back if clipboard API rejects (e.g. iframe without clipboard-write permission)
+    return navigator.clipboard.writeText(text).catch(() => execCommandFallback(text))
+  }
+  return execCommandFallback(text)
+}
+
 function ContactCard({ c, i }) {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = (e) => {
     e.preventDefault()
-    navigator.clipboard.writeText(c.email).then(() => {
+    copyToClipboard(c.email).then(() => {
       setCopied(true)
       setTimeout(() => setCopied(false), 2000)
     })
@@ -60,7 +85,7 @@ function ContactCard({ c, i }) {
           </button>
         </div>
         <a href={`mailto:${c.email}`} className="btn btn-primary contact-btn">
-          Send Email <span aria-hidden="true">→</span>
+          Send Email <ArrowIcon />
         </a>
       </div>
     </article>
