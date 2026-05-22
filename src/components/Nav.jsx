@@ -21,7 +21,7 @@ export default function Nav() {
         </a>
 
         <ul className={`nav-links${menuOpen ? ' open' : ''}`} role="list">
-          <li><a href="#services" onClick={close}>Services</a></li>
+          <li><a href="#services" onClick={close}>Our Services</a></li>
           <li><a href="#about" onClick={close}>About Us</a></li>
           <li><a href="#contact" onClick={close}>Contact Us</a></li>
         </ul>

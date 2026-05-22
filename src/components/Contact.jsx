@@ -23,8 +23,7 @@ export default function Contact() {
       <div className="container">
 
         <div className="contact-header reveal">
-          <span className="eyebrow" style={{ justifyContent: 'center' }}>Contact Us</span>
-          <h2 className="contact-heading">Talk to the right person.</h2>
+<h2 className="contact-heading">Talk to the right person.</h2>
         </div>
 
         <div className="contact-cards">

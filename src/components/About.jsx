@@ -4,16 +4,16 @@ export default function About() {
       <div className="about-inner container">
 
         <div className="about-left reveal">
-          <span className="eyebrow about-eyebrow">About IRB</span>
-          <blockquote className="about-quote">
-            We believe innovation only matters when it's driven by{' '}
-            <span className="text-sage">real human thinking.</span>
-          </blockquote>
+          <h2 className="about-subtitle">About Us</h2>
           <p className="about-body">
-            Founded by Itay and Reut Ben Ner, IRB Consultant is a Hong Kong-registered firm
-            combining software expertise and financial advisory under one roof. We work as
-            independent consultants — lean, focused, and deeply invested in the success of
-            every client.
+            IRB Consultant was founded by Itay and Reut Ben Ner, two <b>independent specialists</b> who
+            believe that real expertise still needs real people. In a world where AI and automation
+            are reshaping how businesses approach finance and technology, we embrace these tools as a
+            genuine advantage. We use modern technologies, AI workflows, and the <b>latest methodologies</b> to
+            work smarter and deliver better outcomes for our clients. But at the center of everything
+            we do is human judgment, years of hands-on experience, and a real commitment to the
+            businesses and people we serve. We are not a large agency. We are <b>two people, fully
+            invested in your growth.</b>
           </p>
         </div>
 
