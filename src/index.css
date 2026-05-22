@@ -119,10 +119,10 @@ ul, ol { list-style: none; }
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 .btn-primary {
-  background: var(--color-charcoal);
+  background: var(--color-sage);
   color: var(--color-white);
 }
-.btn-primary:hover { background: var(--color-sage); }
+.btn-primary:hover { background: #4f6b5c; }
 
 .btn-ghost {
   background: transparent;
@@ -164,6 +164,7 @@ ul, ol { list-style: none; }
 }
 .nav.scrolled {
   box-shadow: 0 1px 12px rgba(37, 47, 63, 0.10);
+  border-bottom: 1px solid rgba(107, 144, 128, 0.2);
 }
 
 .nav-inner {
@@ -239,9 +240,7 @@ ul, ol { list-style: none; }
 ════════════════════════════════════════════ */
 .hero {
   background: var(--color-white);
-  min-height: calc(100vh - 104px);
-  display: flex;
-  align-items: center;
+  border-bottom: 3px solid var(--color-sage);
 }
 
 .hero-inner {
@@ -274,12 +273,12 @@ ul, ol { list-style: none; }
 
 .hero-anchor {
   font-weight: 700;
-  color: var(--color-charcoal);
-  border-bottom: 2px solid var(--color-sage);
-  transition: color 0.2s ease;
+  color: var(--color-sage);
+  border-bottom: 2px solid currentColor;
+  transition: opacity 0.2s ease;
 }
 .hero-anchor:hover {
-  color: var(--color-sage);
+  opacity: 0.75;
 }
 
 .hero-right {
@@ -362,6 +361,7 @@ ul, ol { list-style: none; }
   border-radius: var(--radius-lg);
   padding: 40px 36px;
   border: 0.5px solid rgba(200, 184, 152, 0.4);
+  border-top: 3px solid var(--color-sage);
   box-shadow: var(--shadow-sm);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
