@@ -48,6 +48,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 130px; /* sticky nav height (115px) + breathing room */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
